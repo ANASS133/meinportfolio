@@ -1,0 +1,87 @@
+.resume-container  h1 {
+    text-align: center;
+    color: #37b182;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+  }
+  .resume-container header {
+    position: relative;
+    margin-bottom: 30px;
+  }
+  
+ .resume-container header h1 {
+    position: relative;
+    margin-bottom: 10px;
+  }
+  
+ .resume-container header::after {
+    content: "";
+    display: block;
+    width: 240px;
+    height: 4px;
+    background-color: #37b182;
+    margin: 0 auto;
+    border-radius: 2px;
+  }
+  
+  
+  .resume-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .resume-section {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .education, .experience {
+    width: 48%;
+  }
+  
+  .resume-container h2 {
+    color: #37b182;
+    font-size: 2rem;
+    margin-bottom: 15px;
+  }
+  
+  .resume-container h3 {
+    font-size: 1.5rem;
+    color: #ffffff;
+      margin: 20px 0px 15px 0px;
+  }
+  
+  .resume-container p {
+    margin: 5px 0;
+    color: #b0b0b0;
+  }
+  
+  .resume-container ul {
+    padding-left: 20px;
+  }
+  
+  .resume-container ul li {
+    color: #b0b0b0;
+  }
+  
+  .education-item, .experience-item {
+    margin-bottom: 20px;
+  }
+  
+  .experience-item ul li {
+    margin-bottom: 10px;
+  }
+  
+  @media (max-width: 768px) {
+    .resume-section {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .education, .experience {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  }
+  

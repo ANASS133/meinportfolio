@@ -1,38 +1,99 @@
-.App {
-  text-align: center;
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #151515;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+nav {
+  background: #151515;
+  padding: 16px 32px;
+  height: 80px;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  position: relative; /* Fix the navbar at the top */
+  top: 0; /* Ensure it stays at the top of the page */
+  left: 0; /* Align to the left edge */
+  right: 0; /* Align to the right edge */
+  z-index: 1000; /* Ensure it stays above other content */
 }
 
-.App-link {
-  color: #61dafb;
+nav .logo img {
+  height: 212px;
+  transition: transform 0.3s ease-in-out;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+nav .logo:hover img {
+  transform: scale(1.1);
+}
+
+nav .logo:hover .logo {
+  filter: hue-rotate(180deg); /* Change the color of the SVG image */
+}
+
+.menuItems {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  padding: 0;
+  margin: 0;
+}
+
+.menuItems li {
+  margin: 0 30px;
+}
+
+.menuItems a {
+  text-decoration: none;
+  font-family: revert-layer;
+  color: #ffffff;
+  font-weight: 400;
+  transition: all 0.5s ease-in-out;
+  position: relative;
+
+  &::before {
+    content: attr(data-item);
+    transition: 0.5s;
+    color: #37b182;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 0;
+    overflow: hidden;
   }
-  to {
-    transform: rotate(360deg);
+
+  &:hover {
+    &::before {
+      width: 100%;
+      transition: all 0.5s ease-in-out;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  nav {
+    padding: 16px 24px;
+  }
+
+  .menuItems {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .menuItems li {
+    margin: 15px 0;
+  }
+
+  .menuItems a {
+    font-size: 20px;
+  }
+}
+
+/* Media query for very small devices (like portrait phones) */
+@media (max-width: 480px) {
+  .menuItems a {
+    font-size: 18px;
   }
 }

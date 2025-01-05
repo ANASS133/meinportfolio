@@ -1,0 +1,72 @@
+.skills-container {
+  padding: 50px;
+  background-color: #151515;
+  text-align: center;
+}
+
+.skills-container h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #37b182; /* Matches the green theme */
+  font-family: 'Arial', sans-serif; /* Consistent font */
+  text-transform: uppercase;
+  position: relative; /* Make the heading container relative */
+}
+
+.skills-container h2::after {
+  content: "";
+    display: block;
+    width: 265px;
+    height: 4px;
+    background-color: #37b182;
+    margin: 0 auto;
+    border-radius: 2px;
+    margin: 10px auto;
+}
+
+@keyframes lineAnimation {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 26%;
+  }
+}
+
+.skills-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.skill-card {
+  background: #000000;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding: 20px;
+  margin: 10px;
+  width: 150px;
+  transition: transform 0.2s ease-in-out, border 0.2s ease-in-out; /* Add transition for the border */
+  border: 2px solid transparent; /* Initial transparent border */
+}
+
+.skill-card:hover {
+  transform: translateY(-5px);
+  border: 2px solid #37b182;
+}
+
+.skill-card h3 {
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+
+
+
+
+
