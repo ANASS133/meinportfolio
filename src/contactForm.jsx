@@ -43,6 +43,7 @@ const ContactForm = () => {
 
   return (
     <div className='form'>
+      <div id='form'>
       <center>
         <h2>SCHICK MIR SCHNELL EINE E-MAIL</h2>
         <form id="template_f4nhgo4" ref={form}>
@@ -74,7 +75,7 @@ const ContactForm = () => {
           </div>
         </form>
       </center>
-      <br /><br />
+      <br /><br /></div>
     </div>
   );
 };

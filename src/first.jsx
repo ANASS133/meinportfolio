@@ -44,16 +44,13 @@ export default function First() {
       }
     }, 13500);
 
-    // Intersection Observer to detect if the component is in view
     const observer = new IntersectionObserver((entries) => {
       const entry = entries[0];
       setIsActive(entry.isIntersecting); // Start/stop animation based on visibility
     }, { threshold: 0.1 }); // 10% of the component must be visible to start
 
-    // Observe the component
     observer.observe(document.querySelector('.firstp'));
 
-    // Handle visibility change (when switching tabs)
     const handleVisibilityChange = () => {
       if (document.hidden) {
         setIsActive(false); // Stop animation when tab is not visible
@@ -81,6 +78,7 @@ export default function First() {
 
         {/* Animierter Button */}
         <div className="buttons">
+            <a href="#form">
           <button className="blob-btn">
             Kontaktieren Sie mich
             <span className="blob-btn__inner">
@@ -91,7 +89,7 @@ export default function First() {
                 <span className="blob-btn__blob"></span>
               </span>
             </span>
-          </button>
+          </button></a>
           <br />
           <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
             <defs>

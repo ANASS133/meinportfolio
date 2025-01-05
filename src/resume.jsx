@@ -32,8 +32,8 @@ const Resume = () => {
           <h2>Berufserfahrung</h2>
           <div className="experience-item">
             <h3>Praktikant als Webentwickler</h3>
-            <p>2023 - 2024</p>
-            <p>Lemacom</p>
+            <p>04-2024 - 05-2024</p>
+            <p>BatiHold</p>
             <ul>
               <li>Entwarf und entwickelte responsive Webseiten für Kunden unter Verwendung von Front-End-Technologien wie HTML, CSS, JavaScript und ReactJS.</li>
               <li>Integrierte Drittanbieter-APIs und -Dienste zur Verbesserung der Funktionalität von Webseiten, wie z.B. Zahlungs-Gateways oder die Integration von sozialen Medien.</li>
