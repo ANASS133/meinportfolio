@@ -95,7 +95,7 @@ nav {
   top: 0;
   left: 0;
   right: 0;
-  z-index: 1000;
+  z-index: 10;
 }
 
 .container {
@@ -168,7 +168,7 @@ nav {
     overflow: hidden;
     height: 0;
     transition: height 0.5s ease-in-out; /* Smooth dropdown transition */
-    z-index: 1000;
+    z-index: 10;
   }
   
     .nav-links.open {

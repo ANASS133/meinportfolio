@@ -36,8 +36,8 @@ export default function Bot() {
 
       <div onClick={Disappear}>
 
-      
-      <ThemeProvider theme={theme}>
+<div className="over">
+     <ThemeProvider theme={theme}>
         <ChatBot
           steps={[
             {
@@ -155,6 +155,6 @@ export default function Bot() {
           onClick={handleChatClick}
         />
       </ThemeProvider>
-    </div></div>
+    </div></div></div>
   );
 }

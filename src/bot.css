@@ -6,7 +6,9 @@
       transform: scale(1.1);
     }
   }
-  
+  .over{
+    z-index: 20; 
+  }
   .notification {
     position: fixed;
     bottom: 42px;
