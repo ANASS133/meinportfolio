@@ -85,4 +85,10 @@
       margin-bottom: 20px;
     }
   }
-  
+  @media (max-width: 582px) {
+    .resume-container  h1 {
+      font-size: 2rem;
+    }
+    .resume-container header::after {
+      width: 178px;}
+}

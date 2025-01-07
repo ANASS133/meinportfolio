@@ -73,3 +73,16 @@
  object-fit: 'cover';
   border-radius: 8px;
 }
+@media (max-width: 582px) {
+  .projects-heading {
+    font-size: 2rem;
+  }
+  .projects-heading::after {
+    width: 380px;
+  }
+}
+@media (max-width: 468px) {
+  .projects-heading::after {
+      width: 147px;
+  }
+}

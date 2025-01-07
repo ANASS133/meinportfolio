@@ -64,6 +64,37 @@
   font-weight: bold;
   color: #ffffff;
 }
+@media (max-width: 582px) {
+  .skills-container h2 {
+    font-size: 2rem;
+  }
+  .skills-container h2::after {
+    width: 212px;    }
+}
+@media (max-width: 533px) {
+  .skill-card {
+    padding: 15px;
+    margin: 10px;
+    width: 95px;
+}}
+
+@media (max-width: 533px) {
+  .skills-container {
+    padding: 4px;
+  }
+  .skill-card h3 {
+    font-size: 13px;
+  }
+}
+@media (max-width: 439px) {
+  .projects-heading {
+      font-size: 1.6rem;
+  }
+    .projects-heading::after {
+        width: 302px;
+    }
+
+}
 
 
 

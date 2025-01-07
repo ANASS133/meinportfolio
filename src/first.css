@@ -216,3 +216,29 @@
     font-size: 40px;
   }
 }
+@media (max-width: 546px) {
+  .firstp {
+      font-size: 29px;
+  }
+}
+@media (max-width: 546px) {
+  .blob-btn {
+    padding: 15px 30px;  /* Slightly bigger padding */
+    font-size: 14px;      /* Slightly bigger font size */
+  }
+  .blob-btn__inner {
+    border-radius: 25px;  /* Slightly bigger border radius */
+  }
+
+  .blob-btn__blobs .blob-btn__blob {
+    width: 25%;           /* Slightly bigger width for the blobs */
+    transform: translate3d(0, 150%, 0) scale(1.5);  /* Slightly bigger scale for blobs */
+  }
+}
+
+@media (max-width: 546px) {
+  .blob-btn:before {
+      width: 99%;
+      height: 92%;
+  }
+}

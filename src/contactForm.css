@@ -159,3 +159,7 @@
 body{
   background-color: #151515;
 }
+@media (max-width: 448px) {
+  .form h2::after {
+    width: 90px;}
+}

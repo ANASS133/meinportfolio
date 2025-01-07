@@ -1,9 +1,27 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './Project.css'; // Importiere die CSS-Datei
 
-// Erstelle eine funktionale Komponente, um Projekte anzuzeigen
 const Projects = () => {
-  // Daten für die Projekte
+    useEffect(() => {
+      const element = document.querySelector('.projects-heading');
+      
+      const updateTextContent = () => {
+        if (window.innerWidth < 473) {
+          element.textContent = 'PROJEKTE';
+        } else {
+          element.textContent = 'Einige meiner Projekte';
+        }
+      };
+  
+      // Run initially and on window resize
+      updateTextContent();
+      window.addEventListener('resize', updateTextContent);
+  
+      // Cleanup the event listener when the component is unmounted
+      return () => {
+        window.removeEventListener('resize', updateTextContent);
+      };
+    }, []);
   const projectData = [
     {
       id: 1,

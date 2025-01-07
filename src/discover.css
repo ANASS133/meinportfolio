@@ -225,6 +225,15 @@
 .about-me-info .glow-on-hover {
     margin: 15px auto 0px;
 }}
+@media (max-width: 582px) {
+    .about-me-title {
+        font-size: 2rem;
+    }
+}
 
-
-
+@media (max-width: 409px) {
+    .about-me-image img {
+        width: 322px;
+        height: 322px;
+    }
+}

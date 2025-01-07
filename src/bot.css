@@ -37,4 +37,8 @@
     border-color: transparent transparent transparent #fff;
     z-index: 1000;
   }
-  
+  @media (max-width: 406px) {
+    .notification {
+      font-size: 10px;
+    }
+}
