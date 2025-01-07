@@ -70,6 +70,7 @@ export default function First() {
 
   return (
     <>
+    <div id="first">
       <div className="con">
         <div className="firstp">
           <span className='firstpart'>Hallo, ich bin </span><br />
@@ -101,7 +102,7 @@ export default function First() {
             </defs>
           </svg>
         </div>
-      </div>
+      </div></div>
     </>
   );
 }

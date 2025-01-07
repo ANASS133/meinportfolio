@@ -10,6 +10,7 @@ const AboutMe = () => {
     };
     
     return (<>
+    <div id="about">
         <div className="about-me-container">
             <h2 className="about-me-title">ÜBER MICH</h2>
             
@@ -32,7 +33,7 @@ const AboutMe = () => {
                     </button>
                 </div>
             </div>
-        </div></>
+        </div></div></>
     );
 };
 

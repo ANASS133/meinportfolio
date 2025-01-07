@@ -205,11 +205,26 @@
     }
 }
 
+@media (max-width: 766px) {
+    .about-me-content {
+        flex-direction: column; /* Stack image and text vertically */
+        align-items: center; /* Center-align the items */
+    }
 
+    .about-me-image {
+        margin-bottom: 20px; /* Add spacing between the image and text */
+    }
 
+    .about-me-info {
+        margin-left: 0; /* Remove left margin for better centering */
+        text-align: center; /* Center-align text */
+    }
+}
 
-
-
+@media (max-width: 766px) {
+.about-me-info .glow-on-hover {
+    margin: 15px auto 0px;
+}}
 
 
 

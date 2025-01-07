@@ -24,6 +24,7 @@ const Projects = () => {
   ];
 
   return (
+    <div id='projects'>
     <div className="projects-container">
       <h2 className="projects-heading">Einige meiner Projekte</h2>
       <div className="projects-list">
@@ -43,7 +44,7 @@ const Projects = () => {
           </div>
         ))}
       </div>
-    </div>
+    </div></div>
   );
 };
 

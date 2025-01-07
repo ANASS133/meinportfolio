@@ -156,3 +156,6 @@
     transition: 1s;
     transition-delay: 1s;
 }
+body{
+  background-color: #151515;
+}

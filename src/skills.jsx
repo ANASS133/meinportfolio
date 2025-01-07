@@ -30,6 +30,7 @@ const Skills = () => {
   ];
 
   return (
+    <div id="skills">
     <div className="skills-container">
       <h2>Fähigkeiten</h2>
       <div className="skills-cards">
@@ -40,7 +41,7 @@ const Skills = () => {
           </div>
         ))}
       </div>
-    </div>
+    </div></div>
   );
 };
 

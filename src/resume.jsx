@@ -3,6 +3,7 @@ import './resume.css'; // Achten Sie darauf, Ihre Stile zu importieren
 
 const Resume = () => {
   return (
+    <div id="resume">
     <div className="resume-container">
       <header>
         <h1>Lebenslauf</h1>
@@ -43,7 +44,7 @@ const Resume = () => {
           </div>
         </div>
       </section>
-    </div>
+    </div></div>
   );
 }
 
