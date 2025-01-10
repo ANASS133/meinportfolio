@@ -2,7 +2,7 @@ import React, { useRef, useState, useEffect } from 'react';
 import emailjs from '@emailjs/browser';
 import './contactForm.css';
 
-emailjs.init("");
+emailjs.init("7Xka7caRMAvHLj8i_");
 
 const ContactForm = () => {
   const [isActive, setIsActive] = useState(false);
