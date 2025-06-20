@@ -1,8 +1,11 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useRef, useState, useContext } from 'react';
+import { LanguageContext } from './LanguageContext';
+import translations from './translations';
 
 export default function First() {
   const textRef = useRef(null);
   const [isActive, setIsActive] = useState(true); // State to track visibility
+  const { language } = useContext(LanguageContext);
 
   useEffect(() => {
     const textLoad = () => {
@@ -73,7 +76,7 @@ export default function First() {
     <div id="first">
       <div className="con">
         <div className="firstp">
-          <span className='firstpart'>Hallo, ich bin </span><br />
+          <span className='firstpart'>{translations.first.hello[language]} </span><br />
           <span className='secondpart' ref={textRef}></span>
         </div>
 
@@ -81,7 +84,7 @@ export default function First() {
         <div className="buttons">
             <a href="#form">
           <button className="blob-btn">
-            Kontaktieren Sie mich
+            {translations.first.contactButton[language]}
             <span className="blob-btn__inner">
               <span className="blob-btn__blobs">
                 <span className="blob-btn__blob"></span>

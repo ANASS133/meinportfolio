@@ -212,3 +212,5 @@ nav {
     font-size: 20px;
   }
 }
+.lang-toggle { margin-left: 10px; background:none; border:none; color:white; cursor:pointer; }
+

@@ -1,7 +1,10 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import './discover.css'; // Make sure to import your updated CSS
+import { LanguageContext } from './LanguageContext';
+import translations from './translations';
 
 const AboutMe = () => {
+    const { language } = useContext(LanguageContext);
     const handleDownloadCV = () => {
         const link = document.createElement('a');
         link.href = '/cv.pdf';
@@ -12,7 +15,7 @@ const AboutMe = () => {
     return (<>
     <div id="about">
         <div className="about-me-container">
-            <h2 className="about-me-title">ÜBER MICH</h2>
+            <h2 className="about-me-title">{translations.about.title[language]}</h2>
             
             <div className="about-me-content">
                 <div className="about-me-image">
@@ -21,15 +24,16 @@ const AboutMe = () => {
                 <div className="about-me-info">
                     <h1>Anass Sibbi</h1>
                     <p>
-                        Ich bin ein 20-jähriger angehender Fachmann aus Settat, Marokko. 
-                        Mit Leidenschaft für Technologie und digitale Entwicklung bin ich bestrebt, meine Fähigkeiten zu erweitern und zu innovativen Projekten beizutragen.
-                    </p> 
-                    <p>Alter: 20</p>
-                    <p>Aus: Settat, Marokko</p>
-                    <p>E-Mail: sibbianass@gmail.com</p>
-                    <p id='phonenumber'>Telefon: +212 699771759</p>
+                        {translations.about.description1[language]}
+                        {" "}
+                        {translations.about.description2[language]}
+                    </p>
+                    <p>{translations.about.age[language]}</p>
+                    <p>{translations.about.from[language]}</p>
+                    <p>{translations.about.email[language]}</p>
+                    <p id='phonenumber'>{translations.about.phone[language]}</p>
                     <button className="glow-on-hover" type="button" onClick={handleDownloadCV}>
-                        CV herunterladen
+                        {translations.about.download[language]}
                     </button>
                 </div>
             </div>
