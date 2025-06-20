@@ -1,17 +1,20 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import './resume.css'; // Achten Sie darauf, Ihre Stile zu importieren
+import { LanguageContext } from './LanguageContext';
+import translations from './translations';
 
 const Resume = () => {
+  const { language } = useContext(LanguageContext);
   return (
     <div id="resume">
     <div className="resume-container">
       <header>
-        <h1>Lebenslauf</h1>
+        <h1>{translations.resume.title[language]}</h1>
       </header>
 
       <section className="resume-section">
         <div className="education">
-          <h2>Ausbildung</h2>
+          <h2>{translations.resume.education[language]}</h2>
           <div className="education-item">
             <h3>Licence Excellence in Digitalrecht und Sicherheit</h3>
             <p>2024 - Heute</p>
@@ -30,7 +33,7 @@ const Resume = () => {
         </div>
 
         <div className="experience">
-          <h2>Berufserfahrung</h2>
+          <h2>{translations.resume.experience[language]}</h2>
           <div className="experience-item">
             <h3>Praktikant als Webentwickler</h3>
             <p>04-2024 - 05-2024</p>

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { 
   faHtml5, 
@@ -14,8 +14,11 @@ import {
 
 import { faDatabase } from "@fortawesome/free-solid-svg-icons"; // Solid icon for SQL
 import './skills.css';  // Importing the CSS for the skills section
+import { LanguageContext } from './LanguageContext';
+import translations from './translations';
 
 const Skills = () => {
+  const { language } = useContext(LanguageContext);
   const skills = [
     { name: "HTML", icon: faHtml5, color: "#E44D26" },
     { name: "CSS", icon: faCss3Alt, color: "#1572B6" },
@@ -32,7 +35,7 @@ const Skills = () => {
   return (
     <div id="skills">
     <div className="skills-container">
-      <h2>Fähigkeiten</h2>
+      <h2>{translations.skills.title[language]}</h2>
       <div className="skills-cards">
         {skills.map((skill, index) => (
           <div key={index} className="skill-card">
